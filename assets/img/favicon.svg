@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AP">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Head speaking">
   <rect width="64" height="64" rx="14" fill="#914779"/>
-  <path d="M52 44v6H40v-6h12Z" fill="#17A68F"/>
-  <text x="32" y="43"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="34" font-weight="700"
-        text-anchor="middle" fill="#FBF8FA">A</text>
+  <path d="M14 54V44C9 40 6.500 34 6.500 28 6.500 17 14 9.500 23.500 9.500 32 9.500 37.500 15.500 38.500 23L42 31.500 38.500 33.500V39C38.500 43 36 45.500 32 45.500H27.500V54"
+        fill="none" stroke="#FBF8FA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke="#8FE8D6" stroke-width="5" stroke-linecap="round">
+    <path d="M48 22C50.500 26 50.500 33 48 37"/>
+    <path d="M54 15.500C59.500 22.500 59.500 35.500 54 42.500"/>
+  </g>
 </svg>
