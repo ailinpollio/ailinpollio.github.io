@@ -236,6 +236,8 @@ h1.page-title {
   margin: 2rem 0 .5rem;
 }
 .content p { margin: 0 0 1.15em; text-wrap: pretty; }
+.content p, .content li { text-align: justify; hyphens: auto; }
+.content h3, .content .cv-block__where, .content .pub__authors, .content .pub__venue { text-align: left; hyphens: manual; }
 
 .content :where(a) {
   color: var(--link);
