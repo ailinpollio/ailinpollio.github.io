@@ -2,7 +2,7 @@
   "use strict";
 
   var STORE_THEME = "ailin:theme";
-  var STORE_LANG = "ailin:lang";
+  /* [ES] var STORE_LANG = "ailin:lang"; */
   var root = document.documentElement;
 
   function save(key, value) {
@@ -14,7 +14,8 @@
   }
 
   function currentLang() {
-    return root.getAttribute("data-lang") === "en" ? "en" : "es";
+    /* [ES] return root.getAttribute("data-lang") === "en" ? "en" : "es"; */
+    return "en";
   }
 
   (function themeSwitch() {
@@ -68,6 +69,7 @@
 
   applyLang(currentLang());
 
+  /* [ES] Language switch, disabled: the site is English-only for now.
   (function langSwitch() {
     var group = document.querySelector("[data-switch='lang']");
     if (!group) return;
@@ -93,6 +95,7 @@
 
     sync();
   })();
+  */
 
   (function wugCursor() {
     var finePointer = window.matchMedia("(pointer: fine)").matches;
@@ -236,8 +239,8 @@
   if (!mount || !window.PUBLICATIONS) return;
 
   var TYPE_LABEL = {
-    es: { journal: "Artículo", preprint: "Preprint", conference: "Congreso",
-          chapter: "Capítulo", thesis: "Tesis" },
+    /* [ES] es: { journal: "Artículo", preprint: "Preprint", conference: "Congreso",
+          chapter: "Capítulo", thesis: "Tesis" }, */
     en: { journal: "Article", preprint: "Preprint", conference: "Conference",
           chapter: "Chapter", thesis: "Thesis" }
   };
@@ -245,14 +248,14 @@
   var TYPE_ORDER = ["journal", "conference", "preprint", "chapter", "thesis"];
 
   var FILTER_LABEL = {
-    es: { all: "Todas", journal: "Artículos", conference: "Congresos",
-          preprint: "Preprints", chapter: "Capítulos", thesis: "Tesis" },
+    /* [ES] es: { all: "Todas", journal: "Artículos", conference: "Congresos",
+          preprint: "Preprints", chapter: "Capítulos", thesis: "Tesis" }, */
     en: { all: "All", journal: "Articles", conference: "Conferences",
           preprint: "Preprints", chapter: "Chapters", thesis: "Theses" }
   };
 
   var EMPTY_TEXT = {
-    es: "Todavía no hay nada en esta categoría.",
+    /* [ES] es: "Todavía no hay nada en esta categoría.", */
     en: "Nothing here yet."
   };
 

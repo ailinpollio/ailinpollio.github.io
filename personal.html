@@ -1,18 +1,20 @@
 <!doctype html>
-<html lang="es" data-lang="es">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-es="Personal · Ailín Pollio San Pedro" data-en="Personal · Ailín Pollio San Pedro">Personal · Ailín Pollio San Pedro</title>
+<!-- [ES] title: Personal · Ailín Pollio San Pedro -->
+<title data-en="Personal · Ailín Pollio San Pedro">Personal · Ailín Pollio San Pedro</title>
+<!-- [ES] description: Cine y fotografía: mi Letterboxd y mi portfolio de fotos. -->
 <meta name="description"
-      data-es="Cine y fotografía: mi Letterboxd y mi portfolio de fotos."
       data-en="Films and photography: my Letterboxd and my photo portfolio."
-      content="Cine y fotografía: mi Letterboxd y mi portfolio de fotos.">
+      content="Films and photography: my Letterboxd and my photo portfolio.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Personal · Ailín Pollio San Pedro">
-<meta property="og:description" content="Cine y fotografía.">
+<!-- [ES] og:description: Cine y fotografía. -->
+<meta property="og:description" content="Film and photography.">
 <meta property="og:url" content="https://ailinpollio.github.io/personal.html">
 <meta name="twitter:card" content="summary">
 
@@ -25,10 +27,13 @@
 (function(){try{
   var t=localStorage.getItem("ailin:theme");
   if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);
+  /* [ES] Language detection, disabled: the site is English-only for now.
   var l=localStorage.getItem("ailin:lang");
   if(l!=="es"&&l!=="en"){
     l=(navigator.language||"es").toLowerCase().indexOf("en")===0?"en":"es";
   }
+  */
+  var l="en";
   document.documentElement.setAttribute("data-lang",l);
   document.documentElement.setAttribute("lang",l);
 }catch(e){}})();
@@ -36,7 +41,7 @@
 </head>
 <body>
 
-<a class="skip-link" href="#main"><span lang="es">Saltar al contenido</span><span lang="en">Skip to content</span></a>
+<a class="skip-link" href="#main"><!-- [ES] <span lang="es">Saltar al contenido</span> --><span lang="en">Skip to content</span></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm2.9.5L12 11.2l7.1-5.7H4.9ZM20 7.7l-7.4 5.9a1 1 0 0 1-1.2 0L4 7.7V19h16V7.7Z"/></symbol>
@@ -54,15 +59,16 @@
     <a class="rail__mark" href="index.html">
       <b>Ailín</b>&nbsp;<span>Pollio San Pedro</span>
     </a>
-    <p class="rail__role" lang="es">Ingeniera de Investigación en CNRS, GIPSA-lab, Grenoble, Francia.</p>
+    <!-- [ES] <p class="rail__role" lang="es">Ingeniera de Investigación en CNRS, GIPSA-lab, Grenoble, Francia.</p> -->
     <p class="rail__role" lang="en">Research Engineer at CNRS, GIPSA-lab, Grenoble, France.</p>
 
     <hr class="rail__rule">
 
-    <nav class="nav" data-aria-es="Principal" data-aria-en="Main" aria-label="Principal">
+    <!-- [ES] aria-label: Principal -->
+    <nav class="nav" data-aria-en="Main" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a></li>
-        <li><a href="publications.html"><span lang="es">Publicaciones</span><span lang="en">Publications</span></a></li>
+        <li><a href="index.html"><!-- [ES] <span lang="es">Sobre mí</span> --><span lang="en">About</span></a></li>
+        <li><a href="publications.html"><!-- [ES] <span lang="es">Publicaciones</span> --><span lang="en">Publications</span></a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="personal.html">Personal</a></li>
       </ul>
@@ -86,14 +92,14 @@
 
     <h1 class="page-title">Personal</h1>
 
-    <p class="page-lede" lang="es">
+    <!-- [ES] <p class="page-lede" lang="es">
       Lo que hago <em>cuando no estoy trabajando</em> :)
-    </p>
+    </p> -->
     <p class="page-lede" lang="en">
       What I do <em>when I'm not working</em> :)
     </p>
 
-    <h2 class="section-label section-label--soft" lang="es">Ver pelis…</h2>
+    <!-- [ES] <h2 class="section-label section-label--soft" lang="es">Ver pelis…</h2> -->
     <h2 class="section-label section-label--soft" lang="en">Watch some films…</h2>
 
     <div id="film-list"></div>
@@ -101,49 +107,49 @@
     <p>
       <a class="btn btn--ghost" href="https://boxd.it/2qPWL" rel="me noopener">
         <svg aria-hidden="true"><use href="#i-letterboxd"></use></svg>
-        <span lang="es">Ver mi Letterboxd</span>
+        <!-- [ES] <span lang="es">Ver mi Letterboxd</span> -->
         <span lang="en">See my Letterboxd</span>
       </a>
     </p>
 
-    <h2 class="section-label section-label--soft" lang="es">O sacar fotos</h2>
+    <!-- [ES] <h2 class="section-label section-label--soft" lang="es">O sacar fotos</h2> -->
     <h2 class="section-label section-label--soft" lang="en">Or take some pictures</h2>
 
     <ul class="photo-grid">
       <li><a href="https://ailinpollio.myportfolio.com/landscapes" rel="noopener">
         <img src="assets/img/photos/foto-1.jpg" width="420" height="420" loading="lazy"
-             alt="Ladera de alerces dorados en otoño, con montañas nevadas al fondo."></a></li>
+             alt="Hillside of golden larches in autumn, with snowy mountains in the background."></a></li>
       <li><a href="https://ailinpollio.myportfolio.com/landscapes" rel="noopener">
         <img src="assets/img/photos/foto-2.jpg" width="420" height="420" loading="lazy"
-             alt="Lago de montaña con juncos secos en primer plano y cumbres entre la niebla."></a></li>
+             alt="Mountain lake with dry reeds in the foreground and peaks in the mist."></a></li>
       <li><a href="https://ailinpollio.myportfolio.com/people" rel="noopener">
         <img src="assets/img/photos/foto-3.jpg" width="420" height="420" loading="lazy"
-             alt="Persona sonriendo, con anteojos y campera de abrigo, en un pinar."></a></li>
+             alt="Person smiling, wearing glasses and a warm jacket, in a pine forest."></a></li>
       <li><a href="https://ailinpollio.myportfolio.com/people" rel="noopener">
         <img src="assets/img/photos/foto-4.jpg" width="420" height="420" loading="lazy"
-             alt="Persona muy abrigada, con gorro y cuello alto, entre pinos altos."></a></li>
+             alt="Person bundled up in a hat and high collar, among tall pines."></a></li>
       <li><a href="https://ailinpollio.myportfolio.com/urban" rel="noopener">
         <img src="assets/img/photos/foto-5.jpg" width="420" height="420" loading="lazy"
-             alt="Reja romboidal de una ventana, con palmeras y una casa blanca detrás."></a></li>
+             alt="Diamond-pattern window grille, with palm trees and a white house behind it."></a></li>
       <li><a href="https://ailinpollio.myportfolio.com/urban" rel="noopener">
         <img src="assets/img/photos/foto-6.jpg" width="420" height="420" loading="lazy"
-             alt="Escalera de piedra que sube entre muros con plantas."></a></li>
+             alt="Stone staircase rising between walls covered with plants."></a></li>
     </ul>
 
     <p>
       <a class="btn btn--ghost" href="https://ailinpollio.myportfolio.com" rel="me noopener">
         <svg aria-hidden="true"><use href="#i-camera"></use></svg>
-        <span lang="es">Ver mis fotos</span>
+        <!-- [ES] <span lang="es">Ver mis fotos</span> -->
         <span lang="en">See my photos</span>
       </a>
     </p>
 
     <hr class="section-rule">
 
-    <p lang="es">
+    <!-- [ES] <p lang="es">
       Podés escribirme a
       <a href="mailto:ailinpollio@gmail.com">ailinpollio@gmail.com</a>.
-    </p>
+    </p> -->
     <p lang="en">
       You can always write to
       <a href="mailto:ailinpollio@gmail.com">ailinpollio@gmail.com</a>.
@@ -156,12 +162,12 @@
       © <span id="year">2026</span> Ailín Pollio San Pedro<br>
       <span class="credit">
         <a href="https://commons.wikimedia.org/wiki/File:WugTest.png" rel="noopener">Wug</a>:
-        Jean Berko Gleason (1958)<span lang="es">, dominio público</span><span lang="en">, public domain</span>
+        Jean Berko Gleason (1958)<!-- [ES] <span lang="es">, dominio público</span> --><span lang="en">, public domain</span>
       </span>
     </p>
 
     <div class="controls">
-      <div class="control">
+      <!-- [ES] <div class="control">
         <span class="control__label" id="lbl-lang">
           <span lang="es">Idioma</span><span lang="en">Language</span>
         </span>
@@ -169,18 +175,18 @@
           <button type="button" data-value="es" aria-pressed="true">Español</button>
           <button type="button" data-value="en" aria-pressed="false">English</button>
         </div>
-      </div>
+      </div> -->
 
       <div class="control">
         <span class="control__label" id="lbl-theme">
-          <span lang="es">Tema</span><span lang="en">Theme</span>
+          <!-- [ES] <span lang="es">Tema</span> --><span lang="en">Theme</span>
         </span>
         <div class="switch" data-switch="theme" role="group" aria-labelledby="lbl-theme">
           <button type="button" data-value="light" aria-pressed="true">
-            <span lang="es">Claro</span><span lang="en">Light</span>
+            <!-- [ES] <span lang="es">Claro</span> --><span lang="en">Light</span>
           </button>
           <button type="button" data-value="dark" aria-pressed="false">
-            <span lang="es">Oscuro</span><span lang="en">Dark</span>
+            <!-- [ES] <span lang="es">Oscuro</span> --><span lang="en">Dark</span>
           </button>
         </div>
       </div>

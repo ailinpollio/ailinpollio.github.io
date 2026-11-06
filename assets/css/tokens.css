@@ -140,5 +140,7 @@
   color-scheme: dark;
 }
 
+/* [ES]
 :root[data-lang="en"] [lang="es"] { display: none; }
 :root[data-lang="es"] [lang="en"] { display: none; }
+*/

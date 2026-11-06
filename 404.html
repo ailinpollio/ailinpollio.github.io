@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="es" data-lang="es">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Página no encontrada · Page not found</title>
+<!-- [ES] title: Página no encontrada -->
+<title>Page not found</title>
 <meta name="robots" content="noindex">
 
 <style>
@@ -45,15 +46,20 @@
     text-underline-offset: .18em; font-weight: 600;
   }
   a:focus-visible { outline: 2px solid var(--jade); outline-offset: 3px; }
+  /* [ES]
   :root[data-lang="en"] [lang="es"] { display: none; }
   :root[data-lang="es"] [lang="en"] { display: none; }
+  */
 </style>
 <script>
 (function(){try{
+  /* [ES] Language detection, disabled: the site is English-only for now.
   var l=localStorage.getItem("ailin:lang");
   if(l!=="es"&&l!=="en"){
     l=(navigator.language||"es").toLowerCase().indexOf("en")===0?"en":"es";
   }
+  */
+  var l="en";
   document.documentElement.setAttribute("data-lang",l);
   document.documentElement.setAttribute("lang",l);
 }catch(e){}})();
@@ -61,9 +67,9 @@
 </head>
 <body>
   <p class="code">404</p>
-  <h1 lang="es">Esta página no existe</h1>
+  <!-- [ES] <h1 lang="es">Esta página no existe</h1> -->
   <h1 lang="en">This page doesn’t exist</h1>
-  <p lang="es">El link puede estar viejo, o la escribí mal yo. Probá por acá:</p>
+  <!-- [ES] <p lang="es">El link puede estar viejo, o la escribí mal yo. Probá por acá:</p> -->
   <p lang="en">The link may be outdated, or I may have typed it wrong. Try here:</p>
   <nav>
     <a href="/">About</a>

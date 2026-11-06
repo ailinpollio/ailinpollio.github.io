@@ -252,6 +252,7 @@ h1.page-title {
 
 .content ul, .content ol { padding-left: 1.15rem; margin: 0 0 1.15em; }
 .content li { margin-bottom: .35em; }
+.content .bio-list li { margin-bottom: 0; line-height: 1.5; }
 .content li::marker { color: var(--rule-strong); }
 
 blockquote {

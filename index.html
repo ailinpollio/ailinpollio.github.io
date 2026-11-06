@@ -1,18 +1,19 @@
 <!doctype html>
-<html lang="es" data-lang="es">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-es="Ailín Pollio San Pedro" data-en="Ailín Pollio San Pedro">Ailín Pollio San Pedro</title>
+<!-- [ES] title: Ailín Pollio San Pedro -->
+<title data-en="Ailín Pollio San Pedro">Ailín Pollio San Pedro</title>
+<!-- [ES] description: Ingeniera de investigación en el CNRS (GIPSA-lab, Grenoble). Trabajo en procesamiento del habla, modelos autosupervisados y lingüística clínica. -->
 <meta name="description"
-      data-es="Ingeniera de investigación en el CNRS (GIPSA-lab, Grenoble). Trabajo en procesamiento del habla, modelos autosupervisados y lingüística clínica."
       data-en="Research engineer at CNRS (GIPSA-lab, Grenoble). I work on speech processing, self-supervised models and clinical linguistics."
-      content="Ingeniera de investigación en el CNRS (GIPSA-lab, Grenoble). Trabajo en procesamiento del habla, modelos autosupervisados y lingüística clínica.">
+      content="Research engineer at CNRS (GIPSA-lab, Grenoble). I work on speech processing, self-supervised models and clinical linguistics.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ailín Pollio San Pedro">
-<meta property="og:description" content="Ingeniera de investigación en el CNRS (GIPSA-lab, Grenoble). Trabajo en procesamiento del habla, modelos autosupervisados y lingüística clínica.">
+<meta property="og:description" content="Research engineer at CNRS (GIPSA-lab, Grenoble). I work on speech processing, self-supervised models and clinical linguistics.">
 <meta property="og:url" content="https://ailinpollio.github.io/">
 <meta name="twitter:card" content="summary">
 
@@ -63,10 +64,13 @@
 (function(){try{
   var t=localStorage.getItem("ailin:theme");
   if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);
+  /* [ES] Language detection, disabled: the site is English-only for now.
   var l=localStorage.getItem("ailin:lang");
   if(l!=="es"&&l!=="en"){
     l=(navigator.language||"es").toLowerCase().indexOf("en")===0?"en":"es";
   }
+  */
+  var l="en";
   document.documentElement.setAttribute("data-lang",l);
   document.documentElement.setAttribute("lang",l);
 }catch(e){}})();
@@ -74,7 +78,7 @@
 </head>
 <body>
 
-<a class="skip-link" href="#main"><span lang="es">Saltar al contenido</span><span lang="en">Skip to content</span></a>
+<a class="skip-link" href="#main"><!-- [ES] <span lang="es">Saltar al contenido</span> --><span lang="en">Skip to content</span></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm2.9.5L12 11.2l7.1-5.7H4.9ZM20 7.7l-7.4 5.9a1 1 0 0 1-1.2 0L4 7.7V19h16V7.7Z"/></symbol>
@@ -90,15 +94,16 @@
     <a class="rail__mark" href="index.html">
       <b>Ailín</b>&nbsp;<span>Pollio San Pedro</span>
     </a>
-    <p class="rail__role" lang="es">Ingeniera de Investigación en CNRS, GIPSA-lab, Grenoble, Francia.</p>
+    <!-- [ES] <p class="rail__role" lang="es">Ingeniera de Investigación en CNRS, GIPSA-lab, Grenoble, Francia.</p> -->
     <p class="rail__role" lang="en">Research Engineer at CNRS, GIPSA-lab, Grenoble, France.</p>
 
     <hr class="rail__rule">
 
-    <nav class="nav" data-aria-es="Principal" data-aria-en="Main" aria-label="Principal">
+    <!-- [ES] aria-label: Principal -->
+    <nav class="nav" data-aria-en="Main" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a></li>
-        <li><a href="publications.html"><span lang="es">Publicaciones</span><span lang="en">Publications</span></a></li>
+        <li><a href="index.html"><!-- [ES] <span lang="es">Sobre mí</span> --><span lang="en">About</span></a></li>
+        <li><a href="publications.html"><!-- [ES] <span lang="es">Publicaciones</span> --><span lang="en">Publications</span></a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="personal.html">Personal</a></li>
       </ul>
@@ -120,9 +125,9 @@
 
   <main class="content" id="main">
 
-    <h1 class="visually-hidden"><span lang="es">Sobre mí</span><span lang="en">About</span></h1>
+    <h1 class="visually-hidden"><!-- [ES] <span lang="es">Sobre mí</span> --><span lang="en">About</span></h1>
 
-    <div lang="es">
+    <!-- [ES] <div lang="es">
 
       <img class="portrait" src="assets/img/portrait.jpg" width="800" height="1000"
            alt="Ailín Pollio San Pedro sonriendo, de pelo castaño largo y remera verde,
@@ -210,7 +215,7 @@
         <a href="mailto:ailinpollio@gmail.com">ailinpollio@gmail.com</a>.
       </p>
 
-    </div>
+    </div> -->
 
     <div lang="en">
 
@@ -229,7 +234,7 @@
         Before that, I was part of:
       </p>
 
-      <ul>
+      <ul class="bio-list">
         <li>
           GIPSA-lab in Grenoble as a CNRS Research Engineer, working on end-to-end
           dysarthric speech reconstruction with
@@ -248,7 +253,7 @@
 
       <p>I also worked in the private sector at:</p>
 
-      <ul>
+      <ul class="bio-list">
         <li>
           <a href="https://www.virtuosis.ai/" rel="noopener">Virtuosis AI</a> as an
           AI Research Engineer, developing classifiers to detect various diseases
@@ -260,18 +265,12 @@
         </li>
       </ul>
 
-      <p>
-        My background spans computational linguistics, speech processing,
-        self-supervised learning, articulatory modeling, and clinical speech
-        applications.
-      </p>
-
       <h2 class="section-label">Research interests</h2>
 
       <p>
-        My research lies at the intersection of speech and language processing, 
+        My research lies at the intersection of speech processing, 
         machine learning, and cognition. I am interested in using computational 
-        representations of speech and language to better understand how language 
+        representations of speech to better understand how language 
         is encoded, processed, and acquired, both in typical contexts and in the 
         presence of speech and language impairments.
       </p>
@@ -331,12 +330,12 @@
       © <span id="year">2026</span> Ailín Pollio San Pedro<br>
       <span class="credit">
         <a href="https://commons.wikimedia.org/wiki/File:WugTest.png" rel="noopener">Wug</a>:
-        Jean Berko Gleason (1958)<span lang="es">, dominio público</span><span lang="en">, public domain</span>
+        Jean Berko Gleason (1958)<!-- [ES] <span lang="es">, dominio público</span> --><span lang="en">, public domain</span>
       </span>
     </p>
 
     <div class="controls">
-      <div class="control">
+      <!-- [ES] <div class="control">
         <span class="control__label" id="lbl-lang">
           <span lang="es">Idioma</span><span lang="en">Language</span>
         </span>
@@ -344,18 +343,18 @@
           <button type="button" data-value="es" aria-pressed="true">Español</button>
           <button type="button" data-value="en" aria-pressed="false">English</button>
         </div>
-      </div>
+      </div> -->
 
       <div class="control">
         <span class="control__label" id="lbl-theme">
-          <span lang="es">Tema</span><span lang="en">Theme</span>
+          <!-- [ES] <span lang="es">Tema</span> --><span lang="en">Theme</span>
         </span>
         <div class="switch" data-switch="theme" role="group" aria-labelledby="lbl-theme">
           <button type="button" data-value="light" aria-pressed="true">
-            <span lang="es">Claro</span><span lang="en">Light</span>
+            <!-- [ES] <span lang="es">Claro</span> --><span lang="en">Light</span>
           </button>
           <button type="button" data-value="dark" aria-pressed="false">
-            <span lang="es">Oscuro</span><span lang="en">Dark</span>
+            <!-- [ES] <span lang="es">Oscuro</span> --><span lang="en">Dark</span>
           </button>
         </div>
       </div>
